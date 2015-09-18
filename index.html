@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>What Works by porisme</title>
+    <title>What Works by favelax</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
@@ -19,27 +19,20 @@
         <p>and other hydeous Tales.</p>
 
 
-        <p class="view"><a href="https://github.com/porisme">View My GitHub Profile</a></p>
+        <p class="view"><a href="https://github.com/favelax">View My GitHub Profile</a></p>
 
       </header>
       <section>
         <h2>
-<a id="python-code-for-generating-strict-partitions-with-parts-at-most-max" class="anchor" href="#python-code-for-generating-strict-partitions-with-parts-at-most-max" aria-hidden="true"><span class="octicon octicon-link"></span></a>Python code for generating strict partitions with parts at most <em>max</em>
-</h2>
+<a id="references" class="anchor" href="#references" aria-hidden="true"><span class="octicon octicon-link"></span></a>References</h2>
 
 <h4>
-<a id="25-jul-2015" class="anchor" href="#25-jul-2015" aria-hidden="true"><span class="octicon octicon-link"></span></a><em><strong>25 Jul 2015</strong></em>
+<a id="17-sep-2015" class="anchor" href="#17-sep-2015" aria-hidden="true"><span class="octicon octicon-link"></span></a><em><strong>17 Sep 2015</strong></em>
 </h4>
 
-<pre><code>def partition(n,max):
-    if not n:
-        yield ()
-    for i in range(min(n,max),0,-1):
-        for parts in partition(n-i,min(max,i-1)):
-            yield (i,)+parts
+<pre><code>1. Junping Shao, Eun-Ah Kim, F Duncan M Haldane, Edward Rezayi. Entanglement Entropy of the. Composite Fermion Fluid at ν=1/2. Eun-Ah Kim. Cornell University. [Phys. Rev. Lett. 114, 206402 – Published 22 May 2015](http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.114.206402)
+2. Jack Hessel, Nicolas Savva and Michael Wilber. Image Representations and New Domains in Neural Image Captioning, EMNLP Invited Talk. [EMNLP Invited Talk](http://www.emnlp2015.org/proceedings/VL/pdf/VL07.pdf)
 </code></pre>
-
-<p>This is so trivial or uncared-for that I wasn't able to copy-paste from either stackoverflow or activestate. If it turns out to be too slow for your purposes, try modifying Jerome Keller's <a href="http://jeromekelleher.net/partitions.php">code for ascending compositions</a>.</p>
       </section>
       <footer>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
